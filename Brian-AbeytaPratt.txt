@@ -74,7 +74,8 @@ link to complete codepen: https://codepen.io/babeytapratt/pen/XWdaLyz
     div.sidebar
 
     24. What is a pseudo selector?
-    A pseudo selector is used to define a special state of an element like when you hover over an element and it changes. This is identified by the : They are pseudo because they are only active when the mouse pointer is over them.
+    A pseudo selector is used when you don't know the specific amount of elements in the list such as a grocery store's supplies. If you wanted to change the last element a different color no matter what it is, you
+    can use li: last-child and no matter what the last element is, it will always be that color.
 
     25. What do we use the change the spacing between lines?
     line-spacing: in CSS.
@@ -114,16 +115,29 @@ link to complete codepen: https://codepen.io/babeytapratt/pen/XWdaLyz
     You should commit afte every major change and at least every 15 to 20 minutes.
 
     36. What is the command we would use to push our repo up to github?
-    git push -u current branch name. I have to use git push origin branch name.
+    git push -u origin current branch name. I use git push origin branch name.
 
     37. Walk me through Lambda's git flow.
     On github, fork the repo so it is your own copy. Add your TL as a collaborator on your forked Repo. Clone your repo using the clone and download button. Inside your command line interface, use the cd command
-    to go to the directory that you wnat to store your repo.
+    to go to the directory that you wnat to store your repo. Use the git clone put in link to repo in github. cd into the newly created repo using cd repo name command. Use the git checkout -b 'firstname-lastname'
+    to create your own branch for the repo. Work on the project. Use git add . to add the repo changes you will be commiting. Use git commit -m "helpful commit message" to commit the changes. Use git push -u origin
+    with the name of the branch you have made the changes on to push all the commits from your local machine to github. Go back to your forked project on github. Make sure it is your branch by clicking branch master
+    and changing to your branch. Click the new branch and then click New pull request to make a pull request on your name branch. Make sure you are submitting a request for your branch as the default will be the master
+    branch. Choose your repository only. Add your TL to the reviewers and then submit the pull request. Do not merge your own pull request.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    A block element will fill up as much space as it is given horizontally. An inline element will only take up as much space to display the data it is given.
+
     2. What happens when an element is positioned absolutely?
+    This means that the element no longer exists in the normal document layout flow. It is on its own layer seperate from everything else.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    Use a block level element and change the width of the element through CSS.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Block element: div, p, h1 - h6, In-line elements: span, img. Display inline-block by default: button.
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+     The box model places all content in an html site in boxes. The content is placed in a box with the padding surrounding it in a box. That box is surrounded by the border which is surrounded by the margin.
